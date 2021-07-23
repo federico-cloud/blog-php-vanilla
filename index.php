@@ -16,6 +16,9 @@
                         deserunt excepturi vitae itaque iste recusandae neque, quos vero incidunt iure assumenda.
                         Fugit magnam veritatis repudiandae?
                     </p>
+                    <a href="#" class="postBtn" >
+                        Ver mas
+                    </a>
                 </div>
                 <div class="entrada">
                     <h2>Titulo de mi entrada</h2>
@@ -25,6 +28,9 @@
                         deserunt excepturi vitae itaque iste recusandae neque, quos vero incidunt iure assumenda.
                         Fugit magnam veritatis repudiandae?
                     </p>
+                    <a href="#" class="postBtn" >
+                        Ver mas
+                    </a>
                 </div>
                 <div class="entrada">
                     <h2>Titulo de mi entrada</h2>
@@ -34,15 +40,9 @@
                         deserunt excepturi vitae itaque iste recusandae neque, quos vero incidunt iure assumenda.
                         Fugit magnam veritatis repudiandae?
                     </p>
-                </div>
-                <div class="entrada">
-                    <h2>Titulo de mi entrada</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reiciendis quaerat nemo!
-                        Eveniet, quibusdam minima quo qui at aspernatur sapiente. Ratione reiciendis repudiandae 
-                        harum delectus earum ad id laboriosam aperiam natus, accusamus voluptate consequatur 
-                        deserunt excepturi vitae itaque iste recusandae neque, quos vero incidunt iure assumenda.
-                        Fugit magnam veritatis repudiandae?
-                    </p>
+                    <a href="#" class="postBtn" >
+                        Ver mas
+                    </a>
                 </div>
                 
             </article>

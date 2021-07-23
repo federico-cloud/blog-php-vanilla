@@ -8,10 +8,12 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif, Helvetica, Arial;
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: #F4F4F4;
@@ -56,7 +58,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 120px;
-    background-color: #2979CD;
+    background-color: #156789;
     color: #fff;
     font-size: 20px;
     padding: 10px;
@@ -110,12 +112,13 @@ body{
 /*MENU*/
 
 #menu {
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     list-style: none;
     text-decoration: none;
     align-items: center;
-    background-color: #156785;
-    height: 50px;
+    background-color: #2979CD;
+    height: 80px;
 }
 
 ul{
@@ -126,7 +129,7 @@ ul{
 ul li a{
     height: 50px;
     color: #fff;
-    padding: 10px;
+    padding: 30px;
     margin: 10px;
     font-size: 20px;
 }
@@ -182,33 +185,29 @@ ul li a:hover{
 
 
 /* FORMULARIO */
-.form-registrar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 form{
-    align-content: center;
-    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #333;
     width: 25%;
-    margin: 0 auto;
+    background-color: #fff;
     padding: 25px 10px;
 }
-
 
 .form-registrar label{
     display: inline-block;
     padding: 10px;
-    margin: 5px 25px;
+    margin: 5px 50px;
     width: 80px;
     font-size: 20px;
     font-family: "Open sans", sans-serif;
+    color: #2979CD;
 }
 
 .form-registrar input{
+    margin: 5px auto;
+    width: 200px;
     display: inline-block;
-    margin: 10px 5px;
     border: none;
     font-size: 20px;
     border: none;
@@ -217,8 +216,9 @@ form{
 }
 
 .form-registrar input:focus{
-    outline:2px solid #2979CD;
-    border:none;
+    outline:2px solid #fff;
+    background: #fff;
+    border: none;
 }
 
 .formRegisterBtn{
@@ -236,6 +236,7 @@ form{
 }
 
 /*PRINCIPAL*/
+
 #principal{
     margin: 0 auto;
     width: 90%;
@@ -243,72 +244,94 @@ form{
     overflow: hidden;
 }
 
-#principal a{
-    color: #333;
-}
-
 #principal h1{
+    text-shadow: 20px 5px 10px #707070;
     margin: 15px;
     text-align: center;
-    font-size: 32px;
-    color: #fff;
+    font-size: 50px;
+    color: #156789;
     letter-spacing: 1px;
     font-family: 'Merriweather', serif;
 }
 
 .entrada{
-    background: #fff;
+    border-radius: 20px;
+    height: auto;
+    padding: 30px;
+    position: relative;
     padding: 30px;
     transition: transform 1s;
-    margin: 30px;
     width: 80%;
-    margin: 40px auto;
+    margin: 60px auto;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 30%;
 }
 
-.entrada h1{
+.entrada h2{
+    border-radius: 20px;
+    border: 4px solid #333;
+    font-size: 50px;
+    background-color: #F4F4F4;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #2979CD;
     font-family: 'Merriweather', serif;
+    padding: 20px;
 }
 
 .entrada p{
+    border-radius: 20px;
+    border: 4px solid #333;
+    padding: 30px;
+    background-color: #fff;
+    font-size: 30px;
+    font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+    color: #333;
+    line-height: 40px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .entrada:hover{
+    box-shadow: 2px 2px 5px #707070;
     transition-timing-function: ease-in-out;
     transition-duration: 2s;
     transition-delay: .5s;
     transform: scale(1.1);
 }
 
-#principal h2{
-    font-size: 25px;
-    color: #2979CD;
-    font-family: 'Merriweather', serif;
-    margin-top: 10px;
-    padding: 10px;
-}
-
-#principal p{
-    margin-top: 8px;
-    line-height: 25px;
-    padding: 10px;
-}
-
-#ver-todas a{
+.postBtn{
     display: block;
-    border-radius: 2px;
-    padding: 15px;
-    color:white;
-    background: #007ee5;
-    border: 1px solid #156785;
-    cursor:pointer;
-    width: 160px;
-    margin: 0px auto;
-    margin-top:50px;
+    position: relative;
+    bottom: 20px;
+    right: 0px;
+    width: 120px;
+    padding: 10px;
+    color: #156789;
+    border: 2px solid #156789;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
 }
+
+.postBtn:hover{
+    background-color: #156789;
+    color: #fff;
+    margin-top: 30px;
+}
+
 
 /*PIE DE PAGINA*/
 #pie{
+    margin-top: 200px;
     position: fixed;
     font-size: 20px;
     height: 100px;
