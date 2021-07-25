@@ -18,12 +18,20 @@ html{
 body{
     background-color: #F4F4F4;
     position: relative;
+    height: 80vh;
 }
 
 .alerta-error{
-    color: #ff000096;
-    margin: 0;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #fb0f0f;
+    margin: 5px auto;
     text-align: center;
+    width: 70%;
+    font-size: 20px;
+    font-family: "Open sans", sans-serif;
 }
 
 .fecha{
@@ -58,7 +66,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 120px;
-    background-color: #156789;
+    background-color: #2979CD;
     color: #fff;
     font-size: 20px;
     padding: 10px;
@@ -186,53 +194,85 @@ ul li a:hover{
 
 /* FORMULARIO */
 
+.form-registrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
 form{
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000000;
     border-radius: 10px;
     box-shadow: 2px 2px 4px #333;
     width: 25%;
     background-color: #fff;
-    padding: 25px 10px;
+    padding: 40px;
 }
 
 .form-registrar label{
     display: inline-block;
-    padding: 10px;
-    margin: 5px 50px;
-    width: 80px;
-    font-size: 20px;
-    font-family: "Open sans", sans-serif;
-    color: #2979CD;
+    margin: 15px 20px;
 }
 
-.form-registrar input{
-    margin: 5px auto;
-    width: 200px;
+.form-registrar input{ 
     display: inline-block;
-    border: none;
-    font-size: 20px;
-    border: none;
-    border-bottom: 2px solid #2979CD;
-    background-color: transparent;
+    margin-right: 10px;
 }
 
 .form-registrar input:focus{
     outline:2px solid #fff;
-    background: #fff;
-    border: none;
+    background: #f4f4f4;
+    border: 2px solid #2979CD;
 }
 
-.formRegisterBtn{
+.formRegistrarBtn{
     display: flex;
     justify-content: space-around;
-    margin: 20px;
 }
 
-.formRegisterBtn button{
-    background-color: #156789;
-    height: 60px;
-    padding: 15px;
+.registrarBtn{
+    height: 50px;
+    margin: 40px;
+    width: 120px;
+    background-color: #2979CD;
     color: #fff;
-    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.registrarBtn:hover{
+    background-color: #fff;
+    color: #2979CD;
+    border: 1px solid #2979CD;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+}
+
+.cancelarBtn{
+    margin: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 20px;
+    color : #2979CD;
+    height:50px;
+    width: 120px;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.cancelarBtn:hover{
+    border: 1px solid #2979CD;
+    background-color: #fff;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
 }
 
 /*PRINCIPAL*/
@@ -245,11 +285,11 @@ form{
 }
 
 #principal h1{
-    text-shadow: 20px 5px 10px #707070;
+    text-shadow: 20px 5px 10px #F4F4F4;
     margin: 15px;
     text-align: center;
     font-size: 50px;
-    color: #156789;
+    color: #2979CD;
     letter-spacing: 1px;
     font-family: 'Merriweather', serif;
 }
@@ -271,8 +311,7 @@ form{
 
 .entrada h2{
     border-radius: 20px;
-    border: 4px solid #333;
-    font-size: 50px;
+    font-size: 40px;
     background-color: #F4F4F4;
     display: inline-block;
     margin-top: 40px;
@@ -284,14 +323,13 @@ form{
 
 .entrada p{
     border-radius: 20px;
-    border: 4px solid #333;
     padding: 30px;
     background-color: #fff;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 50px;
-    color: #333;
+    color: #156789;
     line-height: 40px;
     display: block;
     overflow: hidden;
@@ -314,8 +352,8 @@ form{
     right: 0px;
     width: 120px;
     padding: 10px;
-    color: #156789;
-    border: 2px solid #156789;
+    color: #2979CD;
+    border: 2px solid #2979CD;
     background-color: #F4F4F4;
     border-radius: 5px;
     font-size: 25px;
@@ -323,7 +361,7 @@ form{
 }
 
 .postBtn:hover{
-    background-color: #156789;
+    background-color: #2979CD;
     color: #fff;
     margin-top: 30px;
 }
@@ -332,13 +370,13 @@ form{
 /*PIE DE PAGINA*/
 #pie{
     margin-top: 200px;
-    position: fixed;
+    position: relative;
     font-size: 20px;
     height: 100px;
     width: 100%;
     bottom: 0;
     color: #fff;
-    background: #156785;
+    background: #2979CD;
     display: flex;
     justify-content: center;
     align-items: center;

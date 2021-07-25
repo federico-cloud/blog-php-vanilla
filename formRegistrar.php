@@ -26,15 +26,11 @@
         <input type="password" name="pass" id="pass">
         <?= mostrarError($_SESSION['errores'], 'pass'); ?>
 
-        <div class="formRegisterBtn">
-            <a href="registrar.php">Registrarme</a>
-            <a href="index.php">Cancelar</a>
+        <div class="formRegistrarBtn">
+            <a class="registrarBtn" href="registrar.php">Registrarme</a>
+            <a class="cancelarBtn" href="index.php">Cancelar</a>
         </div>
+        
     </form>
 
 </div>
-
-<?php
-    include "assets/includes/footer.html";
-?>
-
