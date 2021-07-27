@@ -2,13 +2,13 @@
 
 session_start();
 
-if(isset($_POST)){
+if(isset($_POST['registrar'])){
 
     //Recogemos los valores del formulario de registro
-    $nombre     =   isset($_POST['nombre'])     ? $_POST['nombre'  ] : false;
-    $apellido   =   isset($_POST['apellido'])   ? $_POST['apellido'] : false;
-    $email      =   isset($_POST['email'])      ? $_POST['email'   ] : false;
-    $pass       =   isset($_POST['pass'])       ? $_POST['pass'    ] : false;
+    $nombre     =   isset($_POST['nombre'])     ? $_POST['nombre']      : false;
+    $apellido   =   isset($_POST['apellido'])   ? $_POST['apellido']    : false;
+    $email      =   isset($_POST['email'])      ? $_POST['email']       : false;
+    $pass       =   isset($_POST['pass'])       ? $_POST['pass']        : false;
 
     //Array de errores
     $errores = array();
@@ -46,17 +46,17 @@ if(isset($_POST)){
         $passValidado = false;
         $errores['pass'] = "La contraseña esta vacia";
     }
-
+    
     //Consultamos los errores, si los errores son 0 se guarda el usuario en la base de datos
     $guardarUsuario = false;
 
     if(count($errores) == 0){
         $guardarUsuario = true;
-
     }else{
         $_SESSION['errores'] = $errores;
         header('location: formRegistrar.php');
-    }
+    } 
+
 
 }
 
