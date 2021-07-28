@@ -1,14 +1,16 @@
 <?php
 
-session_start();
-
 if(isset($_POST['registrar'])){
 
+    //Conexion a la base de datos
+    require_once "assets/includes/conexion.php";
+
+
     //Recogemos los valores del formulario de registro
-    $nombre     =   isset($_POST['nombre'])     ? $_POST['nombre']      : false;
-    $apellido   =   isset($_POST['apellido'])   ? $_POST['apellido']    : false;
-    $email      =   isset($_POST['email'])      ? $_POST['email']       : false;
-    $pass       =   isset($_POST['pass'])       ? $_POST['pass']        : false;
+    $nombre     =   isset($_POST['nombre'])     ? mysqli_real_escape_string($conexion, $_POST['nombre'])      : false;
+    $apellido   =   isset($_POST['apellido'])   ? mysqli_real_escape_string($conexion, $_POST['apellido'])    : false;
+    $email      =   isset($_POST['email'])      ? mysqli_real_escape_string($conexion, trim($_POST['email']))       : false;
+    $pass       =   isset($_POST['pass'])       ? mysqli_real_escape_string($conexion, trim($_POST['pass']))       : false;
 
     //Array de errores
     $errores = array();
@@ -52,11 +54,22 @@ if(isset($_POST['registrar'])){
 
     if(count($errores) == 0){
         $guardarUsuario = true;
+        //Ciframos la password del usuario
+        $passwordSegura = password_hash($pass, PASSWORD_BCRYPT, ['cost'=>5]);
+        //Insertamos el usuario en la base de datos
+        $sql = "INSERT INTO usuarios VALUES (null, '$nombre', '$apellido', '$email', '$passwordSegura', CURDATE());";
+        $resultado = mysqli_query($conexion, $sql);
+        if ($resultado) {
+            $_SESSION['registrarUsuario'] = "<div class = 'alerta-realizado'>"."Se ha registrado el usuario ".$email." de manera exitosa"."</div>";
+            header('refresh:2; url = formRegistrar.php');
+        }else{
+            header('refresh:3; url = formRegistrar.php');
+            $_SESSION['errores']['general'] = "<div class = 'alerta-error-registrar'>"."ERROR: El usuario no ha podido registrarse"."</div>";
+        }
     }else{
         $_SESSION['errores'] = $errores;
         header('location: formRegistrar.php');
     } 
-
 
 }
 

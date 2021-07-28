@@ -14,18 +14,8 @@
 <div class="form-registrar">
 
 
-    <form action="registrar.php" method="POST">
+    <form action="login.php" method="POST">
 
-        <div class="form-registrar-nombre">
-            <label for="nombre">Nombres:</label>
-            <input type="text" name="nombre" id="nombre" required>
-        </div>
-        <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'nombre') : ''; ?>
-        <div class="form-registrar-apellido">
-            <label for="apellido">Apellidos:</label>
-            <input type="text" name="apellido" id="apellido" required>
-        </div>
-        <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'apellido') : ''; ?>
         <div class="form-registrar-email">
             <label for="email">Email:</label>
             <input type="text" name="email" id="email" required>
@@ -39,7 +29,7 @@
 
         <div class="formRegistrarBtn">
                 <button type="submit" class="registrarBtn" name="registrar" value="Registrar">
-                    Registrarse
+                    Iniciar Sesion
                 </button>
             <a class="cancelarBtn" href="index.php">Cancelar</a>
         </div>

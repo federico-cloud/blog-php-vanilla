@@ -20,8 +20,34 @@ body{
     height: 100vh;
 }
 
+.alerta-realizado{
+    padding: 10px;
+    border: 1px solid #25d325;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #25d325;
+    margin: 20px auto;
+    text-align: center;
+    width: 70%;
+    font-size: 30px;
+    font-family: "Open sans", sans-serif;
+}
+
+.alerta-error-registrar{
+    padding: 10px;
+    border: 1px solid #fb0f0f;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #fb0f0f;
+    margin: 20px auto;
+    text-align: center;
+    width: 50%;
+    font-size: 30px;
+    font-family: "Open sans", sans-serif;
+}
+
 .alerta-error{
-    padding: 5px;
+    padding: 10px;
     border: 1px solid red;
     border-radius: 5px;
     background-color: #fff;
@@ -196,7 +222,7 @@ ul li a:hover{
 .form-registrar{
     width: 30%;
     position: absolute;
-    top: 5%;
+    top: 15%;
     left: 35%;
     box-shadow: 2px 2px 20px #2979CD;
     box-shadow: 2px 2px 30px #2979CD;
@@ -221,7 +247,7 @@ form{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 15px auto;
+    margin: 25px auto;
 }
 
 .form-registrar input{
@@ -234,7 +260,7 @@ form{
 .form-registrar input:focus{
     outline:2px solid #fff;
     background: #f4f4f4;
-    border: 3px solid #2979CD;
+    outline: 3px solid #2979CD;
 }
 
 .formRegistrarBtn{
@@ -243,15 +269,19 @@ form{
 }
 
 .registrarBtn{
+    display: inline-block;
     border: none;
     height: 50px;
     margin: 40px;
-    width: 120px;
     background-color: #2979CD;
     color: #fff;
     font-size: 20px;
-    padding: 10px;
     border-radius: 5px;
+    padding: 10px;
+}
+
+.registrarBtn:focus{
+    color: red;
 }
 
 .registrarBtn:hover{

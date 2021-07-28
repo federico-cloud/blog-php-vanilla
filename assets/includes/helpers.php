@@ -14,7 +14,10 @@ function mostrarError($errores, $valor){
 function borrarErrores(){
     $_SESSION['errores'] = null;
     unset($_SESSION['errores']);
+    unset($_SESSION['errores']['general']);
+    unset($_SESSION['registrarUsuario']);
     $borrar = true;
 
     return $borrar;
 }
+
