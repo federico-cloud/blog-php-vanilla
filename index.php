@@ -1,12 +1,19 @@
 <?php
     include "assets/includes/header.html";
     include "assets/includes/menu.html";
+    require_once "assets/includes/conexion.php";
 ?>
     <div id="contenedor">
 
+    <?php if(isset($_SESSION['usuarioLogueado'])) : ?>
+        <div class="saludo">
+            <?= "BIENVENIDO/A ".$_SESSION['usuarioLogueado']['nombre']." ".$_SESSION['usuarioLogueado']['apellidos']. "!";?>
+        </div>
+    <?php endif; ?>
+
         <!-- CONTENIDO PRINCIPAL -->
         <div id="principal">
-            <h1>Ultimos post</h1>
+            <h1>Estos son los ultimos post:</h1>
             <article class="entradas">
                 <div class="entrada">
                     <h2>Titulo de mi entrada</h2>

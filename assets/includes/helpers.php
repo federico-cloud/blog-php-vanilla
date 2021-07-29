@@ -16,6 +16,10 @@ function borrarErrores(){
     unset($_SESSION['errores']);
     unset($_SESSION['errores']['general']);
     unset($_SESSION['registrarUsuario']);
+    unset($_SESSION['errorLogin']);
+    unset($_SESSION['emailInvalido']);
+    unset($_SESSION['errorPass']);
+
     $borrar = true;
 
     return $borrar;

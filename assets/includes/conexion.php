@@ -2,12 +2,12 @@
 
 //Conexion a la base de datos
 
-$server   = 'localhost';
-$usuario  = 'root';
-$clave    = '';
-$base       = 'blog';
+const SERVER    = 'localhost';
+const USUARIO   = 'root';
+const CLAVE     = '';
+const BASE      = 'blog';
 
-$conexion = mysqli_connect($server, $usuario, $clave, $base);
+$conexion = mysqli_connect(SERVER, USUARIO, CLAVE, BASE);
 mysqli_query($conexion, "SET NAMES 'utf8'");
 
 //Iniciar la sesion

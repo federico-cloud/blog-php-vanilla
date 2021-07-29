@@ -16,22 +16,22 @@
 
     <form action="registrar.php" method="POST">
 
-        <div class="form-registrar-nombre">
+        <div class="form-nombre">
             <label for="nombre">Nombres:</label>
             <input type="text" name="nombre" id="nombre" required>
         </div>
         <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'nombre') : ''; ?>
-        <div class="form-registrar-apellido">
+        <div class="form-apellido">
             <label for="apellido">Apellidos:</label>
             <input type="text" name="apellido" id="apellido" required>
         </div>
         <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'apellido') : ''; ?>
-        <div class="form-registrar-email">
+        <div class="form-email">
             <label for="email">Email:</label>
             <input type="text" name="email" id="email" required>
         </div>
         <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'email') : ''; ?>
-        <div class="form-registrar-pass">
+        <div class="form-pass">
         <label for="pass">Password:</label>
         <input type="password" name="pass" id="pass" required>
         </div>
