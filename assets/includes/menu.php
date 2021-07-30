@@ -50,7 +50,7 @@
             <?php while($categoria = mysqli_fetch_assoc($categorias)):  ?>
 
             <li>
-                <a href=""><?= $categoria['nombre']; ?> </a>
+                <a href="categoria.php?id=<?php echo $categoria['id'];?>"><?= $categoria['nombre']; ?> </a>
             </li>
 
             <?php endwhile; ?>
