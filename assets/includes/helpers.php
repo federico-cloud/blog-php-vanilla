@@ -25,3 +25,6 @@ function borrarErrores(){
     return $borrar;
 }
 
+function listarCategorias(){
+    
+}

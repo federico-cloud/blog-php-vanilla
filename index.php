@@ -2,6 +2,7 @@
     include "assets/includes/header.html";
     include "assets/includes/menu.php";
     require_once "assets/includes/conexion.php";
+    require_once "function/categorias.php";
 ?>
     <div id="contenedor">
 

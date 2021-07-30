@@ -7,8 +7,13 @@ const USUARIO   = 'root';
 const CLAVE     = '';
 const BASE      = 'blog';
 
-$conexion = mysqli_connect(SERVER, USUARIO, CLAVE, BASE);
-mysqli_query($conexion, "SET NAMES 'utf8'");
+function conectar(){
+
+$link = mysqli_connect(SERVER, USUARIO, CLAVE, BASE);
+
+return $link;
+
+}
 
 //Iniciar la sesion
 session_start();
