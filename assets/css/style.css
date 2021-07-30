@@ -97,6 +97,89 @@ body{
     margin: 20px;
 }
 
+.btn-crear-post{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 150px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.btn-crear-post:hover{
+    background-color: #25d325;
+    color: #fff;
+    border: 1px solid #25d325;
+}
+
+.btn-crear-categoria{
+    font-family: "Open Sans", sans-serif;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #000000;
+    border: 1px solid #000000;
+
+}
+
+.btn-crear-categoria:hover{
+    background-color: #25d325;
+    color: #fff;
+    border: 1px solid #25d325;
+}
+
+.btn-cerrar{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 160px;
+    border: 1px solid #8b0e0e;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #fff;
+    color: #8b0e0e;
+}
+
+.btn-cerrar:hover{
+    color: #fff;
+    background-color: #8b0e0e;
+}
+
+.btn-editar{
+    font-family: "Open Sans", sans-serif;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    color: #707070;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #707070;
+}
+
+.btn-editar:hover{
+    background-color: #707070;
+    color: #fff;
+}
+
 .btn-ingresar{
     height:50px;
     display: flex;
@@ -108,6 +191,7 @@ body{
     font-size: 20px;
     padding: 10px;
     border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
 }
 
 .btn-ingresar:hover{
@@ -128,6 +212,7 @@ body{
     font-size: 20px;
     padding: 10px;
     border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
 }
 
 .btn-registrar:hover{

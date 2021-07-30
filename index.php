@@ -1,6 +1,6 @@
 <?php
     include "assets/includes/header.html";
-    include "assets/includes/menu.html";
+    include "assets/includes/menu.php";
     require_once "assets/includes/conexion.php";
 ?>
     <div id="contenedor">
